@@ -10,11 +10,16 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 h3 {
+  width: 100%;
   text-align: center;
 }
 .share{
   float: right;
 }
+.toolbar{
+  text-align: center;
+}
+
 #content{
   padding-left: 40px;
   padding-right: 40px;

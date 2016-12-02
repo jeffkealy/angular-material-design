@@ -16,28 +16,42 @@
 
   </head>
   <body ng-app="myApp" layout="column">
-    <md-toolbar>  <!-- declarative components -->
+
+    <md-toolbar layout="row" class="toolbar">  <!-- declarative components -->
+      <md-button class="menu" ng-click="jc.toggleMenu()">
+        <md-icon md-svg-src="assets/ic_reorder_black_24px.svg" class="avatar"></md-icon>
+      </md-button>
       <h3>Angular Material</h3>
     </md-toolbar>
-    <div class="container" layout="row" flex>
-      <md-sidenav md-is-locked-open="true"  class="md-whiteframe-20dp" flex="20">
+
+    <div class="container" layout="row" flex >
+      <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-20dp" flex="30" md-component-id="left">
+        <!-- md-is-locked-open="true" -->
         <md-list>
           <md-list-item>
             <md-button flex>
               <md-icon md-svg-src="assets/ic_code_black_24px.svg" class="avatar"></md-icon>
-                Jeff Kealy
+                <h4>Jeff Kealy</h4>
             </md-button>
           </md-list-item>
           <md-list-item>
             <md-button class="share" flex>
               <md-icon md-svg-src="assets/ic_sentiment_very_satisfied_black_48px.svg" class="avatar"></md-icon>
-                Jake Iwen
+                <h4>Jake Iwen</h4>
+            </md-button>
+          </md-list-item>
+          <md-list-item>
+            <md-button class="share" flex>
+              <md-icon md-svg-src="assets/ic_rowing_black_24px.svg" class="avatar"></md-icon>
+                <h4>Huck Brock Chipoltle</h4>
             </md-button>
           </md-list-item>
         </md-list>
       </md-sidenav>
-    <main ng-view>
-    </main>
+      <md-content ng-view id="content"  flex>
+        <!-- <main  id="mainContent">
+        </main> -->
+      <md-content>
     </div>
 <!-- programatic components -->
   </body>

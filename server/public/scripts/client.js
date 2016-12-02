@@ -8,6 +8,11 @@ app.config(['$routeProvider', function($routeProvider) {
             controller: 'JeffController',
             controllerAs: 'jc'
         })
+        .when('/bottomsheet', {
+            templateUrl: '/views/templates/bottomsheet.html',
+            controller: 'BottomsheetController',
+            controllerAs: 'bs'
+        })
         .otherwise({
             redirectTo: '/jeff'
         });
