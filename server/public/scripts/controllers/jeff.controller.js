@@ -5,7 +5,7 @@ app.controller('JeffController', function($mdBottomSheet){
     console.log("click works");
     $mdBottomSheet.show({
       templateUrl: "../../views/templates/bottomsheet.html",
-      controller: 'JeffController'
+      controller: 'JeffController' 
     })
 
   }
