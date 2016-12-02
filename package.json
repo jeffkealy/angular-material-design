@@ -5,11 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon server/app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.5.9",
+    "angular-animate": "^1.5.9",
+    "angular-aria": "^1.5.9",
+    "angular-material": "^1.1.1",
+    "angular-module": "^1.0.1",
+    "angular-route": "^1.5.9",
     "body-parser": "^1.15.2",
     "express": "^4.14.0"
   }

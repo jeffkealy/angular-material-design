@@ -1,0 +1,23 @@
+/*.backroundGrey{
+  background-color: #d9dedc
+}
+.backroundDarkGrey {
+  background-color: #81808c
+}*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h3 {
+  text-align: center;
+}
+.share{
+  float: right;
+}
+#content{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+
+}

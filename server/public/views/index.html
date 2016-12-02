@@ -3,13 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script type="text/javascript" src="vendor/angular.min.js"></script>
-    <script type="text/javascript" src="scripts/client.js"></script>
-    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="/styles/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="/styles/angular-material.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <script type="text/javascript" src="/vendor/angular.min.js"></script>
+    <script type="text/javascript" src="/vendor/angular-route.min.js"></script>
+    <script type="text/javascript" src="/vendor/angular-animate.min.js"></script>
+    <script type="text/javascript" src="/vendor/angular-aria.min.js"></script>
+    <script type="text/javascript" src="/vendor/angular-material.min.js"></script>
+    <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/jeff.controller.js"></script>
+
   </head>
-  <body ng-app="app">
-    <header class="jumbotron" ng-controller="firstController as fc">
-      <h1 class="container">{{fc.message}} Angular Node Express Starter</h1>
-    </header>
+  <body ng-app="myApp" layout="column">
+    <md-toolbar>  <!-- declarative components -->
+      <h3>Angular Material</h3>
+    </md-toolbar>
+    <div class="container" layout="row" flex>
+      <md-sidenav md-is-locked-open="true"  class="md-whiteframe-20dp" flex="20">
+        <md-list>
+          <md-list-item>
+            <md-button flex>
+              <md-icon md-svg-src="assets/ic_code_black_24px.svg" class="avatar"></md-icon>
+                Jeff Kealy
+            </md-button>
+          </md-list-item>
+          <md-list-item>
+            <md-button class="share" flex>
+              <md-icon md-svg-src="assets/ic_sentiment_very_satisfied_black_48px.svg" class="avatar"></md-icon>
+                Jake Iwen
+            </md-button>
+          </md-list-item>
+        </md-list>
+      </md-sidenav>
+    <main ng-view>
+    </main>
+    </div>
+<!-- programatic components -->
   </body>
 </html>
